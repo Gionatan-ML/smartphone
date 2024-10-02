@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(27, 27, 27);
+}
+.smartphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgb(0, 0, 0);
+    height: 20rem;
+    width: 10rem;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.993);
+  
+
+    
+
+}
+.smartphone-controll{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+
+}
