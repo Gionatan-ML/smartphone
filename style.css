@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url('photo/ranger-4df6c1b6.png') center center no-repeat;
+
+}
+.smartphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.7px solid rgb(0, 0, 0);
+    height: 20rem;
+    width: 10rem;
+    border-radius: 40px;
+    backdrop-filter: blur(4px);
+    position: relative;
+    box-shadow: 10px 10px 10px black;
+  
+
+    
+
+}
+.smartphone-controll{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100%,1fr));
+    grid-template-rows: 1fr 1fr;
+
+
+
+
+}
+.smartphone-top{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.smartphone-down{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 20px;
+
+    
+}
+.meteo-photo{
+    object-fit: scale-down;
+    height: 40px;
+}
+.note-img{
+    object-fit: contain;
+    height: 40px;
+}
+.mySvg{
+    position: absolute;
+    top: -4.3rem;
+}
+.date-hours{
+    font-size: 40px;
+}
