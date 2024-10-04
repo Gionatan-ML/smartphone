@@ -1,3 +1,12 @@
+@keyframes expand {
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.20);
+    }
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +52,7 @@ body{
 
 }
 .smartphone-top{
+    visibility:hidden;
     margin-top: 40px;
     width: 100%;
     display: flex;
@@ -50,6 +60,7 @@ body{
     overflow: hidden;
 }
 .smartphone-down{
+    visibility:hidden;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -68,8 +79,21 @@ body{
 }
 .mySvg{
     position: absolute;
-    top: -4.3rem;
+    align-self: flex-start;
+    transform: translate(0,-40%);
 }
 .date-hours{
     font-size: 40px;
+}
+.meteo-link,.note-link{
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+
+}
+.meteo-link:hover, .note-link:hover{
+    animation: expand 0.70s forwards;
+    
 }

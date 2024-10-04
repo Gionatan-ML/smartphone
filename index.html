@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="bundle.js"></script>
+    <link rel="stylesheet" href="meteo.css">
 
     <script defer src="file.js" type="module"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="smartphone">
+    <div class="smartphone" tabindex="0" aria-label="online-smartphone">
         <img src="circle.svg" alt="" class="mySvg">
         <div class="smartphone-controll">
             <div class="smartphone-top">
@@ -18,14 +19,22 @@
                 <p class="date-day"></p>
             </div>
             <div class="smartphone-down">
-                <a class="meteo-link" href="#">
+                <button class="meteo-link" >
                     <img class="meteo-photo" src="photo/dc7f8cdb406dc7704cccb5188ddc28c1.png" alt="">
-                </a>
-                <a href="#" class="note-link">
+                </button>
+                <button  class="note-link">
                     <img src="photo/4021693.png" alt="" class="note-img">
-                </a>
+                </button>
 
             </div>
+        </div>
+        <div class="meteo-app">
+            <img src="photo/7866059.png" alt="" class="meteo">
+            <form class="myForm">
+                <label for="f1" class="myLabel">Choose the zone</label>
+                <input type="text" placeholder="zone" class="input">
+                <button type="submit" class="my_button">Submit!</button>
+            </form>
         </div>
     </div>
 </body>
