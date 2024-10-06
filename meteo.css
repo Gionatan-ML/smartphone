@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Protest+Strike&display=swap');
+:root{
+    --myUrl: xx;
+}
 .meteo-app{
 
     display: flex;
@@ -14,12 +18,7 @@
     border-radius: 40px;
 
 }
-.meteo{
-    object-fit: scale-down;
-    height: 80px;
-    margin-bottom: 30px;
-    filter: drop-shadow( 0px  0px 20px gold);
-}
+
 .myForm{
     display: flex;
     justify-content: center;
@@ -68,4 +67,21 @@
 }
 .my_button:hover{
     background-color: rgb(197, 195, 87);
+}
+[class|="meteo-photo"]{
+    object-fit: scale-down;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+.weather{
+    align-self: center;
+    background-color: #360fe4;
+    color: rgb(255, 255, 255) ;
+    padding: 8px;
+    border-radius: 100px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }

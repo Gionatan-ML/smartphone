@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="bundle.js"></script>
     <link rel="stylesheet" href="meteo.css">
-
+    <script type="module" src="meteo_class.js"></script>
+    <script type="module" src="bindAll.js"></script>
     <script defer src="file.js" type="module"></script>
     <title>Document</title>
 </head>
@@ -29,10 +30,11 @@
             </div>
         </div>
         <div class="meteo-app">
-            <img src="photo/7866059.png" alt="" class="meteo">
+            <h1 id="weather" class="weather"></h1>
+            <img src="photo/meteo_photo/sun.png" alt="" class="meteo-photo" id="meteo-photo">
             <form class="myForm">
                 <label for="f1" class="myLabel">Choose the zone</label>
-                <input type="text" placeholder="zone" class="input">
+                <input type="text" placeholder="zone" class="input" autofocus autocomplete="on">
                 <button type="submit" class="my_button">Submit!</button>
             </form>
         </div>
