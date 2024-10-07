@@ -40,6 +40,7 @@ body{
 
 }
 .smartphone-controll{
+    visibility: visible;
     height: 100%;
     width: 100%;
     border-radius: 40px;
@@ -50,9 +51,10 @@ body{
 
 
 
+
 }
 .smartphone-top{
-    visibility:hidden;
+
     margin-top: 40px;
     width: 100%;
     display: flex;
@@ -60,7 +62,7 @@ body{
     overflow: hidden;
 }
 .smartphone-down{
-    visibility:hidden;
+
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -75,7 +77,8 @@ body{
 }
 .note-img{
     object-fit: contain;
-    height: 40px;
+    height: 45px;
+    margin-bottom: 10px;
 }
 .mySvg{
     position: absolute;
@@ -96,4 +99,16 @@ body{
 .meteo-link:hover, .note-link:hover{
     animation: expand 0.70s forwards;
     
+}
+.newSvg{
+   height: 10px;
+   cursor: pointer;
+}
+#svg{
+    cursor: pointer;
+    position: absolute;
+    align-self: flex-start;
+    left: 15px;
+    top: 15px;
+    z-index: 3;
 }

@@ -22,6 +22,7 @@ export default class Meteo{
         let value=this.apiCall(text);
         [...this.meteo]=await value;
         await this.print_photo(this.meteo[1]);
+        this.weather.style.visibility="visible";
         this.weather.textContent=this.meteo[0];
         
 

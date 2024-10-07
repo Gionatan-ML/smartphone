@@ -2,11 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Protest+Strike&display=swap');
-:root{
-    --myUrl: xx;
-}
-.meteo-app{
 
+.meteo-app{
+    visibility: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -52,7 +50,7 @@
     text-decoration: none;
     outline:1px;
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto
+    flex-shrink: 1;
 }
 .my_button{
     font-family: "Lobster", sans-serif;
@@ -75,6 +73,7 @@
 
 }
 .weather{
+    visibility:hidden;
     align-self: center;
     background-color: #360fe4;
     color: rgb(255, 255, 255) ;
